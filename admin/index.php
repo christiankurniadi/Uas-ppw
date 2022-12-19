@@ -9,7 +9,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>Cigs Admin | Dashboard</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -106,26 +106,7 @@
             <p>Customer</p>
           </a>
         </li>
-        <li class="nav-header">Metode Pembayaran</li>
-        <li class="nav-item">
-          <a href="/bank" class="nav-link">
-            <i class="nav-icon fas fa-money-check"></i>
-            <p>Bank</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="/payment" class="nav-link">
-            <i class="nav-icon fas fa-money-check-alt"></i>
-            <p>Jenis Pembayaran</p>
-          </a>
-        </li>
-        <li class="nav-header">Transaksi</li>
-        <li class="nav-item">
-          <a href="/transaction" class="nav-link">
-            <i class="nav-icon fas fa-shopping-cart"></i>
-            <p>Transaksi</p>
-          </a>
-        </li>
+
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
