@@ -1,0 +1,85 @@
+@import "variables";
+@import "mixins";
+@import "globals";
+
+
+.body{
+    height: 80vh;
+
+    @include breakpoint-up(lg){
+       height: 100vh ;
+    }
+}
+
+span{
+    color: red;
+}
+
+header{
+    width: 100%;
+    @include breakpoint-up(lg){
+        width: 45%;
+    }
+    
+    .header-img{
+        width: 8rem;
+        height: 30px;
+    }
+}
+
+h4{
+    color: rgb(121, 121, 121);
+}
+
+h2{
+    margin: 0;
+}
+
+.sign-in{
+
+    width: 100%;
+
+    @include breakpoint-up(lg){
+        width: 30%;
+    }
+    
+
+    .form-wrapper ul li{
+        display: flex;
+        flex-direction: column;
+        padding: .8rem;
+
+        input{
+            height: 30px;
+            border-radius: 5px;
+            border: 0.5px solid black;
+            padding: 10px ;
+        }
+
+        p{
+            font-size: 12px;
+        }
+
+        .btn{
+            background-color: $darkBlue;
+            color: white;
+            height: 45px;
+            font-weight: bold;
+
+            @include breakpoint-up(lg){
+                width: 100%;
+            }
+        }
+
+
+    }
+
+}
+
+.signup{
+    text-align: center;
+
+    a{
+        margin-left: 3px;
+    }
+}

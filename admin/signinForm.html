@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="../css/signin.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="flex flex-ai-c flex-jc-c flex-column">
+    <header class="flex flex-jc-c container--pall">
+      <img src="img/logo.png" alt="" />
+    </header>
+    <h2 class="container--pall">Sign In as an Admin</h2>
+    <section class="sign-in container--pall">
+      <div class="form-wrapper">
+        <form action="signin.php" method="post">
+          <ul>
+            <li>
+              <label for="email">Email Address <span>*</span></label>
+              <input type="email" id="email" name="email" required />
+            </li>
+            <li>
+              <label for="password">Password <span>*</span></label>
+              <input type="password" id="password" name="password" required />
+            </li>
+            <li>
+              <input type="submit" class="btn" value="Sign In" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

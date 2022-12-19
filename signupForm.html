@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signup.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="flex flex-ai-c flex-jc-se flex-column">
+    <header class="flex flex-jc-sb flex-ai-c container--pall">
+      <img src="img/logo.png" alt="" />
+      <a href="sign-in.html">Sign In --></a>
+    </header>
+    <h4>Join CIGS</h4>
+    <h2 class="container--pall hide-for-mobile">Sign Up to be a part of our community!</h2>
+    <section class="sign-up container--pall">
+      <div class="form-wrapper">
+        <form action="signup.php" method="post">
+          <ul>
+            <li>
+              <label for="name">Full Name <span>*</span></label>
+              <input type="text" name="name" id="name" required />
+            </li>
+            <li>
+              <label for="telp">Phone Number <span>*</span></label>
+              <input type="tel" id="telp" name="phoneNumber" required />
+            </li>
+            <li>
+              <label for="email">Email Address <span>*</span></label>
+              <input type="email" placeholder="youremail@email.com" name="email" id="email" autofocus required />
+            </li>
+            <li>
+              <label for="password">Password <span>*</span></label>
+              <input type="password" name="password" id="password" required />
+              <p>Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter.</p>
+            </li>
+            <li>
+              <input type="submit" class="btn" value="Sign Up" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+    <footer class="container--pall">By creating an account, you agree to the <a href="#">Terms of Service</a>. For more information about WASD's privacy practices, see the <a href="#">WASD Privacy Statement</a>. We'll occasionally send you account-related emails.</footer>
+  </body>
+</html>
