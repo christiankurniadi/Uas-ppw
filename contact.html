@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cigs - Cigarettes and Vapes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&family=Silkscreen&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="fixed-top bg-light">
+      <nav class="navbar navbar-expand-lg bg-light container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cigs</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="vapes.php">Shop Vapes</a></li>
+                  <li><a class="dropdown-item" href="cigarettes.php">Shop Cigarettes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="logout.php">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="contact">
+      <div class="container">
+        <h1 class="text-center mb-4">Get in touch!</h1>
+        <div class="row">
+          <div class="col">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40911.864526704165!2d30.695343971410157!3d50.142590243068014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d49150d1afe7a5%3A0xe004a240a57880b2!2sUkrainka%2C%20Kyiv%20Oblast%2C%20Ukraine%2C%2008720!5e0!3m2!1sen!2sid!4v1665908971848!5m2!1sen!2sid"
+              width="450"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col align-self-center">
+            <form method="get" action="contact.html">
+              <table class="text-start">
+                <tr>
+                  <td><label for="name">Name: </label></td>
+                  <td><label for="email">Email: </label></td>
+                </tr>
+                <tr>
+                  <td><input type="text" name="name" id="name" required /></td>
+                  <td><input type="email" placeholder="example@email.com" id="email" name="email" required /></td>
+                </tr>
+                <tr>
+                  <td><label for="subject">Subject: </label></td>
+                  <td><label for="phone">Phone: </label></td>
+                </tr>
+                <tr>
+                  <td><input type="text" id="subject" name="subject" placeholder="" required /></td>
+                  <td><input type="text" id="phone" name="phone" placeholder="e.g +62 123 456 789" required /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="mesaage">Message: </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td><textarea name="message" id="message" cols="20" rows="5" placeholder="" required></textarea></td>
+                </tr>
+                <tr>
+                  <td><input class="btn m-0" value="Send" type="submit" /></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container d-flex flex-row align-items-start justify-content-sm-between pt-5">
+        <div class="footer__about d-flex flex-column">
+          <h4 class="mb-1">about</h4>
+          <a href="#">About us</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer__collaborate d-flex flex-column">
+          <h4 class="mb-1">collaborate with us</h4>
+          <a href="#">For Brands and Designers</a>
+        </div>
+        <div class="footer__support d-flex flex-column">
+          <h4 class="mb-1">support</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Community Guidelines</a>
+        </div>
+
+        <div class="footer__logo d-flex flex-column">
+          <a href="/"><strong>Cigs</strong></a>
+        </div>
+        <div class="footer__copyright">
+          <p>&copy; 2022 Cigs</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
