@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>Cigs Admin | Vapes</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -94,37 +94,18 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="/switch" class="nav-link">
+          <a href="tableRokok.php" class="nav-link">
             <i class="nav-icon fas fa-vector-square"></i>
             <p>Rokok</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="/product" class="nav-link">
+          <a href="tableCustomer.php" class="nav-link">
             <i class="nav-icon fa fa-user"></i>
             <p>Customer</p>
           </a>
         </li>
-        <li class="nav-header">Metode Pembayaran</li>
-        <li class="nav-item">
-          <a href="/bank" class="nav-link">
-            <i class="nav-icon fas fa-money-check"></i>
-            <p>Bank</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="/payment" class="nav-link">
-            <i class="nav-icon fas fa-money-check-alt"></i>
-            <p>Jenis Pembayaran</p>
-          </a>
-        </li>
-        <li class="nav-header">Transaksi</li>
-        <li class="nav-item">
-          <a href="/transaction" class="nav-link">
-            <i class="nav-icon fas fa-shopping-cart"></i>
-            <p>Transaksi</p>
-          </a>
-        </li>
+
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
@@ -140,7 +121,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">Vapes</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -165,6 +146,14 @@
                   <i class="nav-icon far fa-plus-square"></i>
                   Tambah
                 </a>
+                <a href="formUpdateVape.html" class="btn btn-warning">
+                <i class="fas fa-pencil-alt"></i>
+                  Ubah
+                </a>
+                <a href="formHapusVape.html" class="btn btn-danger">
+                <i class="fas fa-trash"></i>
+                  Hapus
+                </a>
               </h3>
             </div>
             <!-- /.card-header -->
@@ -177,7 +166,6 @@
         <th>Deskripsi</th>
         <th>Harga</th>
         <th>Source gambar</th>
-        <th>Aksi</th>
       </tr>
     </thead>
     <tbody>
@@ -188,18 +176,7 @@
         <td><?php echo $result['deskripsi'] ?></td>
         <td>$<?php echo $result['harga'] ?></td>
         <td><?php echo $result['gambar'] ?></td>
-        <td>
-          <form action="/product/delete/<%= product[i]._id %>?_method=DELETE" method="POST">
-            <a href="/product/edit/<%= product[i]._id %>" class="btn btn-warning">
-              <i class="fas fa-pencil-alt"></i>
-              Ubah
-            </a>
-            <button class="btn btn-danger">
-              <i class="fas fa-trash"></i>
-              Hapus
-            </button>
-          </form>
-        </td>
+
       </tr>
       <?php } ?>
     </tbody>

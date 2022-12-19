@@ -73,28 +73,6 @@
         <?php } ?>
         <!-- 
         <div class="card" style="width: 18rem">
-          <img src="https://github.com/christiankurniadi/keyboard-landing-page/blob/main/img/vaporesso-1.jpg?raw=true" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">ZERO One v30</h5>
-            <p class="card-text">A simple pod but has a massive cloud.</p>
-          </div>
-          <div class="card-body d-flex flex-column justify-content-center align-items-center gap-1">
-            <a href="#" class="card-link card-btn">View product</a>
-            <a href="#" class="card-link card-btn">Buy now</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="https://github.com/christiankurniadi/keyboard-landing-page/blob/main/img/vaporesso-3.jpg?raw=true" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Vaporesso Chronn</h5>
-            <p class="card-text">Modern looking mod for high standard folks.</p>
-          </div>
-          <div class="card-body d-flex flex-column justify-content-center align-items-center gap-1">
-            <a href="#" class="card-link card-btn">View product</a>
-            <a href="#" class="card-link card-btn">Buy now</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
           <img src="https://github.com/christiankurniadi/keyboard-landing-page/blob/main/img/liquid.jpg?raw=true" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Bloom farms</h5>

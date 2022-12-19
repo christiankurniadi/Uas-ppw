@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cigs Admin | Create</title>
+  <title>Cigs Admin | Ubah</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -117,7 +117,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Tambah</h1>
+            <h1 class="m-0">Ubah</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -138,11 +138,15 @@
           <div class="card">
             <div class="card-header">
               <h3 class="card-title">
-                Form tambah vapes
+                Form Ubah rokok
               </h3>
             </div>
-            <form action="createVape.php" method="POST">
+            <form action="updateRokok.php" method="POST">
               <div class="card-body">
+                <div class="form-group">
+                  <label for="name">Id produk</label>
+                  <input type="text" name="id_produk" class="form-control" id="name" placeholder="Masukkan id produk" required />
+                </div>
                 <div class="form-group">
                   <label for="name">Nama produk</label>
                   <input type="text" name="namaProduk" class="form-control" id="name" placeholder="Masukkan nama produk" required />
@@ -161,7 +165,7 @@
                 </div>
             </div>
               <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Simpan</button>
+                <button type="submit" class="btn btn-warning">Ubah</button>
               </div>
             </form>
             <!-- /.card-header -->

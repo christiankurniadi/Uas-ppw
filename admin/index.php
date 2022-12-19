@@ -95,13 +95,13 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="/switch" class="nav-link">
+          <a href="tableRokok.php" class="nav-link">
             <i class="nav-icon fas fa-vector-square"></i>
             <p>Rokok</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="/product" class="nav-link">
+          <a href="tableCustomer.php" class="nav-link">
             <i class="nav-icon fa fa-user"></i>
             <p>Customer</p>
           </a>

@@ -1,10 +1,14 @@
-
+<?php
+  session_start();
+    include "connection.php";
+    $qry = mysqli_query($conn, "SELECT * FROM `tb_rokok` ");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cigs Admin | Create</title>
+  <title>Cigs Admin | Rokok</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -90,7 +94,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="tableRokok.php" class="nav-link">
+          <a href="#" class="nav-link">
             <i class="nav-icon fas fa-vector-square"></i>
             <p>Rokok</p>
           </a>
@@ -117,7 +121,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Tambah</h1>
+            <h1 class="m-0">Rokok</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -138,35 +142,45 @@
           <div class="card">
             <div class="card-header">
               <h3 class="card-title">
-                Form tambah vapes
+                <a href="formTambahRokok.html" class="btn btn-primary">
+                  <i class="nav-icon far fa-plus-square"></i>
+                  Tambah
+                </a>
+                <a href="formUpdateRokok.html" class="btn btn-warning">
+                <i class="fas fa-pencil-alt"></i>
+                  Ubah
+                </a>
+                <a href="formHapusRokok.html" class="btn btn-danger">
+                <i class="fas fa-trash"></i>
+                  Hapus
+                </a>
               </h3>
             </div>
-            <form action="createVape.php" method="POST">
-              <div class="card-body">
-                <div class="form-group">
-                  <label for="name">Nama produk</label>
-                  <input type="text" name="namaProduk" class="form-control" id="name" placeholder="Masukkan nama produk" required />
-                </div>
-                <div class="form-group">
-                  <label for="name">Deskripsi produk</label>
-                  <input type="text" name="deskripsi" class="form-control" id="name" placeholder="Deskripsi" required />
-                </div>
-                <div class="form-group">
-                    <label for="price">Harga produk</label>
-                    <input type="number" name="harga" class="form-control" id="price" placeholder="" required />
-                </div>
-                <div class="form-group">
-                  <label for="name">Source gambar</label>
-                  <input type="text" name="gambar" class="form-control" id="name" placeholder="e.g https://www.google.com/gambar-1" required />
-                </div>
-            </div>
-              <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Simpan</button>
-              </div>
-            </form>
             <!-- /.card-header -->
             <div class="card-body">
-                
+            <table id="example2" class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>ID.</th>
+        <th>Nama</th>
+        <th>Deskripsi</th>
+        <th>Harga</th>
+        <th>Source gambar</th>
+      </tr>
+    </thead>
+    <tbody>
+    <?php while ($result = mysqli_fetch_array($qry)) { ?> 
+      <tr>
+        <td><?php echo $result['id_produk'] ?></td>
+        <td><?php echo $result['namaProduk'] ?></td>
+        <td><?php echo $result['deskripsi'] ?></td>
+        <td>$<?php echo $result['harga'] ?></td>
+        <td><?php echo $result['gambar'] ?></td>
+
+      </tr>
+      <?php } ?>
+    </tbody>
+  </table>
   
             </div>
             <!-- /.card-body -->
@@ -230,3 +244,4 @@
 <script src="dist/js/pages/dashboard.js"></script>
 </body>
 </html>
+<?php  ?>
