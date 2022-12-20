@@ -142,18 +142,7 @@
           <div class="card">
             <div class="card-header">
               <h3 class="card-title">
-                <a href="formTambahVapes.html" class="btn btn-primary">
-                  <i class="nav-icon far fa-plus-square"></i>
-                  Tambah
-                </a>
-                <a href="formUpdateVape.html" class="btn btn-warning">
-                <i class="fas fa-pencil-alt"></i>
-                  Ubah
-                </a>
-                <a href="formHapusVape.html" class="btn btn-danger">
-                <i class="fas fa-trash"></i>
-                  Hapus
-                </a>
+
               </h3>
             </div>
             <!-- /.card-header -->

@@ -159,28 +159,28 @@
             <!-- /.card-header -->
             <div class="card-body">
             <table id="example2" class="table table-bordered table-hover">
-    <thead>
-      <tr>
-        <th>ID.</th>
-        <th>Nama</th>
-        <th>Deskripsi</th>
-        <th>Harga</th>
-        <th>Source gambar</th>
-      </tr>
-    </thead>
-    <tbody>
-    <?php while ($result = mysqli_fetch_array($qry)) { ?> 
-      <tr>
-        <td><?php echo $result['id_produk'] ?></td>
-        <td><?php echo $result['namaProduk'] ?></td>
-        <td><?php echo $result['deskripsi'] ?></td>
-        <td>$<?php echo $result['harga'] ?></td>
-        <td><?php echo $result['gambar'] ?></td>
+              <thead>
+                <tr>
+                  <th>ID.</th>
+                  <th>Nama</th>
+                  <th>Deskripsi</th>
+                  <th>Harga</th>
+                  <th>Source gambar</th>
+                </tr>
+              </thead>
+              <tbody>
+              <?php while ($result = mysqli_fetch_array($qry)) { ?> 
+                <tr>
+                  <td><?php echo $result['id_produk'] ?></td>
+                  <td><?php echo $result['namaProduk'] ?></td>
+                  <td><?php echo $result['deskripsi'] ?></td>
+                  <td>$<?php echo $result['harga'] ?></td>
+                  <td><?php echo $result['gambar'] ?></td>
 
-      </tr>
-      <?php } ?>
-    </tbody>
-  </table>
+                </tr>
+                <?php } ?>
+              </tbody>
+            </table>
   
             </div>
             <!-- /.card-body -->
